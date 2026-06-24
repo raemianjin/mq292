@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.myquant.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.myquant.app"
+        minSdk 26
+        targetSdk 34
+        versionCode 23
+        versionName "2.9.2"
+    }
+
+    // 임베디드 키스토어 (GitHub Secrets 불필요 — myDict 방식)
+    signingConfigs {
+        release {
+            storeFile file("myquant.jks")
+            storePassword "myquant2026"
+            keyAlias "myquant"
+            keyPassword "myquant2026"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}

@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+
+    <!-- candlesticks (ascending), green bull -->
+    <path android:pathData="M35,72 L35,52" android:strokeColor="#3316C784" android:strokeWidth="2"/>
+    <path android:pathData="M35,68 L35,56" android:strokeColor="#16C784" android:strokeWidth="8" android:strokeLineCap="round"/>
+    <path android:pathData="M50,70 L50,44" android:strokeColor="#3316C784" android:strokeWidth="2"/>
+    <path android:pathData="M50,64 L50,48" android:strokeColor="#16C784" android:strokeWidth="8" android:strokeLineCap="round"/>
+    <path android:pathData="M65,66 L65,36" android:strokeColor="#3316C784" android:strokeWidth="2"/>
+    <path android:pathData="M65,60 L65,40" android:strokeColor="#16C784" android:strokeWidth="8" android:strokeLineCap="round"/>
+
+    <!-- amber uptrend line -->
+    <path android:pathData="M30,74 L44,62 L58,66 L82,34"
+        android:strokeColor="#F0B90B" android:strokeWidth="6"
+        android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    <!-- arrow head -->
+    <path android:pathData="M82,34 L70,35 M82,34 L81,46"
+        android:strokeColor="#F0B90B" android:strokeWidth="6"
+        android:strokeLineCap="round" android:strokeLineJoin="round"/>
+    <!-- node dot -->
+    <path android:pathData="M82,34m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0z"
+        android:fillColor="#FFD54A"/>
+</vector>
